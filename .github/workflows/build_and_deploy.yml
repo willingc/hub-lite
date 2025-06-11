@@ -30,8 +30,8 @@ jobs:
       run: |
         make all
 
-    - name: Deploy build to gh pages
-      uses: JamesIves/github-pages-deploy-action@v4
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v4
       with:
-        branch: gh-pages
-        folder: _build
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: _build
