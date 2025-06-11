@@ -41,9 +41,9 @@ jobs:
       - name: Prepare preview directory
         run: |
           mkdir -p preview/pr-${{ github.event.number }}
-          cp -r dist/* preview/pr-${{ github.event.number }}/
+          #cp -r dist/* preview/pr-${{ github.event.number }}/
           # Alternative if your build outputs to a different directory:
-          # cp -r build/* preview/pr-${{ github.event.number }}/
+          cp -r _build/* preview/pr-${{ github.event.number }}/
           # cp -r _site/* preview/pr-${{ github.event.number }}/
           
       - name: Checkout gh-pages branch
@@ -63,7 +63,7 @@ jobs:
           
           # Ensure the PR preview directory exists and copy new content
           mkdir -p preview/pr-${{ github.event.number }}
-          cp -r dist/* preview/pr-${{ github.event.number }}/
+          cp -r _build/* preview/pr-${{ github.event.number }}/
           
           # Create or update index page with links to all previews
           echo "# PR Previews" > preview/index.md
