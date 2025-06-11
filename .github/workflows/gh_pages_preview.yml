@@ -24,7 +24,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
           python-version: '3.13' # Specify the Python version
 
@@ -41,10 +41,7 @@ jobs:
       - name: Prepare preview directory
         run: |
           mkdir -p preview/pr-${{ github.event.number }}
-          #cp -r dist/* preview/pr-${{ github.event.number }}/
-          # Alternative if your build outputs to a different directory:
           cp -r _build/* preview/pr-${{ github.event.number }}/
-          # cp -r _site/* preview/pr-${{ github.event.number }}/
           
       - name: Checkout gh-pages branch
         uses: actions/checkout@v4
