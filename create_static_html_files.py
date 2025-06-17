@@ -341,7 +341,7 @@ def generate_plugin_html(row, template, plugin_dir):
 
         html_description = md.render(no_first_header)
     else:
-        html_description = "Not available"
+        html_description = "This plugin does not have a description."
 
     plugin_types_html = generate_plugin_types_html(row)
     openfile_types_html = generate_open_extensions_html(row)

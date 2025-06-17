@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>napari-bigwarp - napari hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hublite-container">
+
+        <!-- Navigation -->
+        <div class="nav-section">
+            <div class="logo-section">
+                <div class="logo-placeholder">N</div>
+                <div class="brand-text">napari hub</div>
+            </div>
+            <nav class="nav-links">
+                <a href="../old.html" class="nav-link">← Back to Plugins</a>
+            </nav>
+        </div>
+
+        <!-- Plugin Detail Layout -->
+        <div class="plugin-detail">
+            <div class="detail-main">
+                <!-- Plugin Header -->
+                <div class="plugin-header" style="margin-bottom: 2rem;">
+                    <div>
+                        <h1 class="plugin-title" style="font-size: 2.5rem; margin-bottom: 0.5rem;">napari-bigwarp</h1>
+                        <div class="plugin-author" style="font-size: 1.1rem;">by Ben Kantor</div>
+                    </div>
+                    <div class="plugin-status">
+                        <span class="status-badge status-active">Active</span>
+                        <span class="status-badge status-new">New</span>
+                    </div>
+                </div>
+
+                <!-- Tab Navigation -->
+                <div class="tab-navigation">
+                    <button class="tab-btn active">Overview</button>
+                    <button class="tab-btn">Documentation</button>
+                    <button class="tab-btn">Examples</button>
+                    <button class="tab-btn">Changelog</button>
+                    <button class="tab-btn">Issues</button>
+                </div>
+
+                <!-- Overview Content -->
+                <div class="tab-content">
+                    <div class="placeholder-box">
+                        <h3>Plugin Description</h3>
+                        <p style="margin: 1rem 0; text-align: left; max-width: 600px; margin-left: auto; margin-right: auto;">
+                            BigWarp-like interface for napari. This plugin provides interactive registration and alignment
+                            capabilities similar to the popular BigWarp tool in Fiji/ImageJ. Features include:
+                        </p>
+                        <ul style="text-align: left; max-width: 500px; margin: 1rem auto;">
+                            <li>Interactive landmark placement</li>
+                            <li>Real-time transformation preview</li>
+                            <li>Multiple transformation types (affine, thin-plate spline)</li>
+                            <li>Export functionality for transformation matrices</li>
+                            <li>Support for 2D and 3D image registration</li>
+                        </ul>
+                    </div>
+
+                    <div class="placeholder-box">
+                        <h3>Installation & Quick Start</h3>
+                        <div style="text-align: left; max-width: 600px; margin: 1rem auto;">
+                            <p style="margin-bottom: 1rem;">Install via pip:</p>
+                            <div class="install-command" style="margin-bottom: 1rem;">
+                                pip install napari-bigwarp
+                            </div>
+                            <p style="margin-bottom: 1rem;">Or install in napari via the plugin manager.</p>
+                            <p><strong>Quick Start:</strong> Open napari, load two images, then access BigWarp from the Plugins menu.</p>
+                        </div>
+                    </div>
+
+                    <div class="placeholder-box">
+                        <h3>Screenshots & Examples</h3>
+                        <p>Interactive demo images, videos, or step-by-step tutorials would be displayed here</p>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                            <div style="background: #e2e8f0; padding: 2rem; border-radius: 8px; color: #64748b;">
+                                Screenshot 1<br>Landmark Placement
+                            </div>
+                            <div style="background: #e2e8f0; padding: 2rem; border-radius: 8px; color: #64748b;">
+                                Screenshot 2<br>Transformation Preview
+                            </div>
+                            <div style="background: #e2e8f0; padding: 2rem; border-radius: 8px; color: #64748b;">
+                                Screenshot 3<br>Final Result
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="placeholder-box">
+                        <h3>Requirements & Compatibility</h3>
+                        <div style="text-align: left; max-width: 500px; margin: 1rem auto;">
+                            <p><strong>Requirements:</strong></p>
+                            <ul>
+                                <li>Python ≥ 3.8</li>
+                                <li>napari ≥ 0.4.18</li>
+                                <li>numpy</li>
+                                <li>scipy</li>
+                                <li>scikit-image</li>
+                            </ul>
+                            <p style="margin-top: 1rem;"><strong>Tested on:</strong> Windows, macOS, Linux</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-sidebar">
+                <!-- Installation Section -->
+                <div class="install-section">
+                    <h3 style="margin-bottom: 1rem; color: #1e293b;">Install Plugin</h3>
+                    <button class="install-btn">Quick Install via napari</button>
+                    <div style="margin-bottom: 1rem;">
+                        <strong style="font-size: 0.9rem; color: #64748b;">Or via command line:</strong>
+                        <div class="install-command">
+                            pip install napari-bigwarp
+                            <button class="copy-btn">Copy</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plugin Info -->
+                <div style="margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e2e8f0;">
+                    <h3 style="margin-bottom: 1rem; color: #1e293b;">Plugin Info</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                        <div class="stat-item" style="justify-content: space-between; width: 100%;">
+                            <span>Version:</span>
+                            <span style="font-weight: 600;">1.2.3</span>
+                        </div>
+                        <div class="stat-item" style="justify-content: space-between; width: 100%;">
+                            <span>Downloads:</span>
+                            <span style="font-weight: 600;">1.2k</span>
+                        </div>
+                        <div class="stat-item" style="justify-content: space-between; width: 100%;">
+                            <span>License:</span>
+                            <span style="font-weight: 600;">MIT</span>
+                        </div>
+                        <div class="stat-item" style="justify-content: space-between; width: 100%;">
+                            <span>Python:</span>
+                            <span style="font-weight: 600;">≥3.8</span>
+                        </div>
+                        <div class="stat-item" style="justify-content: space-between; width: 100%;">
+                            <span>Updated:</span>
+                            <span style="font-weight: 600;">2 days ago</span>
+                        </div>
+                        <div class="stat-item" style="justify-content: space-between; width: 100%;">
+                            <span>Stars:</span>
+                            <span style="font-weight: 600;">24 ⭐</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Links Section -->
+                <div style="margin-bottom: 2rem;">
+                    <h3 style="margin-bottom: 1rem; color: #1e293b;">Links</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                        <a href="#" style="color: #0ea5e9; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+                            📦 PyPI Package
+                        </a>
+                        <a href="#" style="color: #0ea5e9; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+                            💻 GitHub Repository
+                        </a>
+                        <a href="#" style="color: #0ea5e9; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+                            📚 Documentation
+                        </a>
+                        <a href="#" style="color: #0ea5e9; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+                            🐛 Report Issues
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Author Info -->
+                <div style="margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e2e8f0;">
+                    <h3 style="margin-bottom: 1rem; color: #1e293b;">Author</h3>
+                    <div style="display: flex; align-items: center; gap: 0.75rem;">
+                        <div style="width: 40px; height: 40px; background: #0ea5e9; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                            BK
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; color: #1e293b;">Ben Kantor</div>
+                            <div style="font-size: 0.9rem; color: #64748b;">@bkntr</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tags -->
+                <div>
+                    <h3 style="margin-bottom: 1rem; color: #1e293b;">Tags</h3>
+                    <div class="plugin-tags">
+                        <span class="tag">registration</span>
+                        <span class="tag">alignment</span>
+                        <span class="tag">interactive</span>
+                        <span class="tag">bigwarp</span>
+                        <span class="tag">landmarks</span>
+                        <span class="tag">transformation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

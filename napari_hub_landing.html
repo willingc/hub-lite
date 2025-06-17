@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>napari hub - Discover Plugins</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hublite-container">
+
+        <!-- Navigation -->
+        <div class="nav-section">
+            <div class="logo-section">
+                <div class="logo-placeholder">N</div>
+                <div class="brand-text">napari hub</div>
+            </div>
+            <nav class="nav-links">
+                <a href="#" class="nav-link active">Plugins</a>
+                <a href="#" class="nav-link">Documentation</a>
+                <a href="#" class="nav-link">Community</a>
+                <a href="#" class="nav-link">About</a>
+            </nav>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <h1 class="hero-title">Discover Plugins</h1>
+            <p class="hero-subtitle">Find and install powerful image analysis tools that extend napari's capabilities</p>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search plugins by name, author, or keyword...">
+                <span class="search-icon">🔍</span>
+            </div>
+            <div class="filters-row">
+                <div class="filter-chip active">All Categories</div>
+                <div class="filter-chip">Image Processing</div>
+                <div class="filter-chip">Segmentation</div>
+                <div class="filter-chip">Registration</div>
+                <div class="filter-chip">Visualization</div>
+                <div class="filter-chip">I/O</div>
+            </div>
+        </div>
+
+        <!-- Plugin Grid -->
+        <div class="plugins-section">
+            <div class="section-header">
+                <h2 class="section-title">Featured Plugins</h2>
+                <div class="view-toggle">
+                    <button class="view-btn active">Grid</button>
+                    <button class="view-btn">List</button>
+                </div>
+            </div>
+
+            <div class="plugins-grid">
+                <div class="plugin-card">
+                    <div class="plugin-header">
+                        <div>
+                            <div class="plugin-title">napari-bigwarp</div>
+                            <div class="plugin-author">by Ben Kantor</div>
+                        </div>
+                        <div class="plugin-status">
+                            <span class="status-badge status-active">Active</span>
+                            <span class="status-badge status-new">New</span>
+                        </div>
+                    </div>
+                    <p class="plugin-description">BigWarp-like interface for napari. Interactive registration and alignment of images with landmark-based transformation.</p>
+                    <div class="plugin-stats">
+                        <div class="stat-item">
+                            <span>⬇️</span>
+                            <span>1.2k downloads</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>⭐</span>
+                            <span>24 stars</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span>
+                            <span>Updated 2 days ago</span>
+                        </div>
+                    </div>
+                    <div class="plugin-tags">
+                        <span class="tag">registration</span>
+                        <span class="tag">alignment</span>
+                        <span class="tag">interactive</span>
+                    </div>
+                </div>
+
+                <div class="plugin-card">
+                    <div class="plugin-header">
+                        <div>
+                            <div class="plugin-title">nnInteractive</div>
+                            <div class="plugin-author">by Lars Krämer, Fabian Isensee</div>
+                        </div>
+                        <div class="plugin-status">
+                            <span class="status-badge status-active">Active</span>
+                        </div>
+                    </div>
+                    <p class="plugin-description">3D interactive segmentation with point, scribble, box, and lasso prompts. State-of-the-art accuracy for medical imaging.</p>
+                    <div class="plugin-stats">
+                        <div class="stat-item">
+                            <span>⬇️</span>
+                            <span>3.5k downloads</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>⭐</span>
+                            <span>156 stars</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span>
+                            <span>Updated 1 week ago</span>
+                        </div>
+                    </div>
+                    <div class="plugin-tags">
+                        <span class="tag">segmentation</span>
+                        <span class="tag">3D</span>
+                        <span class="tag">AI</span>
+                        <span class="tag">medical</span>
+                    </div>
+                </div>
+
+                <div class="plugin-card">
+                    <div class="plugin-header">
+                        <div>
+                            <div class="plugin-title">motile-plugin</div>
+                            <div class="plugin-author">by CellMap Team</div>
+                        </div>
+                        <div class="plugin-status">
+                            <span class="status-badge status-active">Active</span>
+                        </div>
+                    </div>
+                    <p class="plugin-description">Multi-object tracking with graph optimization. Track cells and particles across time with advanced algorithms.</p>
+                    <div class="plugin-stats">
+                        <div class="stat-item">
+                            <span>⬇️</span>
+                            <span>890 downloads</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>⭐</span>
+                            <span>67 stars</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span>
+                            <span>Updated 3 days ago</span>
+                        </div>
+                    </div>
+                    <div class="plugin-tags">
+                        <span class="tag">tracking</span>
+                        <span class="tag">time-series</span>
+                        <span class="tag">graph</span>
+                    </div>
+                </div>
+
+                <div class="plugin-card">
+                    <div class="plugin-header">
+                        <div>
+                            <div class="plugin-title">napari-aicsimageio</div>
+                            <div class="plugin-author">by Allen Institute</div>
+                        </div>
+                        <div class="plugin-status">
+                            <span class="status-badge status-active">Active</span>
+                        </div>
+                    </div>
+                    <p class="plugin-description">Advanced image I/O for scientific formats. Support for CZI, LIF, ND2, and many other microscopy file formats.</p>
+                    <div class="plugin-stats">
+                        <div class="stat-item">
+                            <span>⬇️</span>
+                            <span>15.2k downloads</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>⭐</span>
+                            <span>89 stars</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span>
+                            <span>Updated 1 day ago</span>
+                        </div>
+                    </div>
+                    <div class="plugin-tags">
+                        <span class="tag">I/O</span>
+                        <span class="tag">microscopy</span>
+                        <span class="tag">formats</span>
+                    </div>
+                </div>
+
+                <div class="plugin-card">
+                    <div class="plugin-header">
+                        <div>
+                            <div class="plugin-title">cellpose-napari</div>
+                            <div class="plugin-author">by Carsen Stringer</div>
+                        </div>
+                        <div class="plugin-status">
+                            <span class="status-badge status-active">Active</span>
+                        </div>
+                    </div>
+                    <p class="plugin-description">Generalist algorithm for cell segmentation. Deep learning-based segmentation for cells and nuclei in various image types.</p>
+                    <div class="plugin-stats">
+                        <div class="stat-item">
+                            <span>⬇️</span>
+                            <span>8.7k downloads</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>⭐</span>
+                            <span>234 stars</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span>
+                            <span>Updated 5 days ago</span>
+                        </div>
+                    </div>
+                    <div class="plugin-tags">
+                        <span class="tag">segmentation</span>
+                        <span class="tag">deep-learning</span>
+                        <span class="tag">cells</span>
+                    </div>
+                </div>
+
+                <div class="plugin-card">
+                    <div class="plugin-header">
+                        <div>
+                            <div class="plugin-title">napari-skimage-regionprops</div>
+                            <div class="plugin-author">by Robert Haase</div>
+                        </div>
+                        <div class="plugin-status">
+                            <span class="status-badge status-active">Active</span>
+                        </div>
+                    </div>
+                    <p class="plugin-description">Measure properties of labeled image regions. Comprehensive analysis of segmented objects with scikit-image integration.</p>
+                    <div class="plugin-stats">
+                        <div class="stat-item">
+                            <span>⬇️</span>
+                            <span>2.1k downloads</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>⭐</span>
+                            <span>45 stars</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span>
+                            <span>Updated 1 week ago</span>
+                        </div>
+                    </div>
+                    <div class="plugin-tags">
+                        <span class="tag">analysis</span>
+                        <span class="tag">measurements</span>
+                        <span class="tag">regionprops</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="responsive-note">
+            📱 <strong>Mobile Responsive:</strong> Grid layout adapts to single column on smaller screens, navigation collapses to hamburger menu
+        </div>
+
+    </div>
+</body>
+</html>
