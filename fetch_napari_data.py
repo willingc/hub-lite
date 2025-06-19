@@ -220,6 +220,7 @@ def build_plugins_dataframe() -> pd.DataFrame:
         A DataFrame containing the enriched and flattened plugin data. Returns an empty DataFrame if no data is fetched.
     """
     summary_df = get_plugin_summary(API_SUMMARY_URL)
+    print(summary_df.head(2))
     conda_name_map = fetch(API_CONDA_MAP_URL)
 
     all_plugin_data = []

@@ -4,5 +4,6 @@ markdown-it-py[linkify,plugins]
 mypy
 pandas
 pygments
+pyjanitor
 requests
 types-requests
