@@ -1,4 +1,4 @@
-exclude: '(^notebooks/.*|^__marimo__/.*)'
+exclude: '(^notebooks/.*)'
 
 repos:
 - repo: https://github.com/astral-sh/ruff-pre-commit
